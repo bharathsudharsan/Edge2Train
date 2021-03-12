@@ -2,7 +2,7 @@
 
 **Overview:** We provide *Edge2Train* algorithm for all Arduino IDE-supported MCUs. [Edge2Train](https://dl.acm.org/doi/abs/10.1145/3410992.3411014) can be used to train SVMs (for binary classification tasks) on MCUs.
 
-**Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the algorithm folder. The datasets 1 to 3 are used for training binary classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
+**Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
 1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using *Edge2Train*, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
 2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
