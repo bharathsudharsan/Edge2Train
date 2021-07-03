@@ -8,9 +8,9 @@ We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T 
 
 We converted all the listed datasets into MCU executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary SVM classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
-1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using E2T, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
-2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
-3. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using E2T, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
+1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage") (4 features, 3 classes, 150 samples): Using E2T, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
+2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) (30 features, 2 classes, 569 samples): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
+3. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/) (64 features, 10 classes, 1797 samples): Here, we extracted data fields for digit 6, with positive and negative samples. Then using E2T, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
 
 ### MCU boards
 
