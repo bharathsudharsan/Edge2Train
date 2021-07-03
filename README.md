@@ -25,7 +25,7 @@ Using Arduino IDE we upload the E2T algorithm along with the selected/uncommente
 
 After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. <br/>
 
-![alt text]()
+![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/setup.png)
 
 As shown above, we received the training and inference result from MCUs via Serial port. We report the following results, using which we perform analysis.
 
@@ -35,6 +35,15 @@ As shown above, we received the training and inference result from MCUs via Seri
 
 3. Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks
 
+The relationship between training time, training set size, and feature dimension
+
+1. ESP32 took 15.58 secs to train for Iris. 28.24 secs for 64 features MNIST digits
+
+2. Metro with 48 MHz clock and no FPS took 21.39 minutes for Iris (82x times slower than ESP32)
+
+3. Training time grows swiftly with the number of training samples
+
+4. Sudden peaks observed when Edge2Train consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly
 
 
 **Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
