@@ -24,15 +24,15 @@ Using Arduino IDE we upload the E2T algorithm along with the selected/uncommente
 ## Edge2train Performance Evaluation
 
 ### Setup
-After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. <br/>
+After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). Here, CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. <br/>
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Setup.png)
 
-The experimental setup is shown in above Figure. Here, we received the result data from MCUs via Serial port. We received, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
+The experimental setup is shown in the above Figure. Here, we received the result data from MCUs via Serial port. We received, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
 
 ### Train set size vs train time
 
-The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure (plotted data is the results ontained from MCUs).
+The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure (plotted data is the results obtained from MCUs).
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/samples_vs_time.png)
 
@@ -42,15 +42,15 @@ The relationship between training time (sec), training set size (number of rows)
 
 3. Training time grows swiftly with the number of training samples.
 
-4. Sudden peaks observed when E2T consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly.
+4. Sudden peaks are observed when E2T consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly.
 
 ### Train and Infer Time
 
-The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are shown in the below Figure.
+The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are shown below in Figure.
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_time_on_mcus_and_cpus.png)
 
-1. CPU1 and MCU4 is fastest in their respective classes. CPU1 is only 7.57 sec faster than MCU4 for Iris and 7.45 sec for MNIST digits datasets.
+1. CPU1 and MCU4 are the fastest in their respective classes. CPU1 is only 7.57 sec faster than MCU4 for Iris and 7.45 sec for MNIST digits datasets.
 
 2. Although CPUs are faster, they cannot be used as edge devices due to their cost (CPU1 is 200x more costly than MCU4), form factor (5x more area), and energy consumption (7x times). 
 
@@ -70,10 +70,10 @@ Energy (in Joules) consumed to train and infer is calculated by multiplying the 
 
 1. MCUs consume 20x times less energy for the Iris and 350x times less energy for digits than CPUs to unit infer.
 
-2. For unit infer using 64-dimension digits CPU1 consumed 58x more energy than to inference for a 4-dimension input. Whereas MCU4 only consumed 3.4x times more energy to infer for digits data than for Iris.
+2. For unit infer using 64-dimension digits CPU1 consumed 58x more energy than to infer for a 4-dimension input. Whereas MCU4 only consumed 3.4x times more energy to infer for digits data than for Iris.
 
 
-**Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
+**Tip:** When first time training SVMs on MCUs using E2T, we recommend using better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
 **If the code is useful, please consider citing Edge2Train paper using the BibTex entry below.**
 
