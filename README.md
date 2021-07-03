@@ -45,6 +45,28 @@ The relationship between training time, training set size, and feature dimension
 
 4. Sudden peaks observed when Edge2Train consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly
 
+The chosen CPUs have 1000x better specifications over MCUs. The train time for all 5 MCUs and 2 CPUs are shown above.
+
+1. CPU1 and MCU4 is fastest in their respective classes. CPU1 vs MCU4: CPU1 is only 7.57 sec faster than MCU4 for Iris and 7.45 sec for MNIST digits datasets
+
+2. Although CPUs are faster, they cannot be used as edge devices due to their cost (CPU1 is 200x more costly than MCU4), form factor (5x more area), and energy consumption (7x times) 
+
+3. Since billions of edge devices are MCU-based, it is feasible to train even at lesser speeds. Models can rather be trained on the edge using our framework
+
+Performing inference on MCUs using the MCUs trained SVMs
+
+1. The fastest MCU3 could infer in 0.0036 ms for Iris and 0.1 ms for Digits datasets
+
+2. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms
+
+3. MCU 3, 4 vs CPUs: MCUs 3, 4 that used our Edge2Train performed unit inference for the digits data (64 features) 3.5x times faster than CPUs
+
+Energy (in Joules) consumed to train and infer is calculated by multiplying the Current (Amperes) rating of MCUs with its Potential (Volts) and task time (seconds). For CPUs, we used the htop process viewer and powerstat tool
+
+1. MCUs consume 20x times less energy for the Iris and 350x times less energy for digits than CPUs to unit infer
+
+2. For unit infer using 64-dimension digits CPU1 consumed 58x more energy than to inference for a 4-dimension input. Whereas MCU4 only consumed 3.4x times more energy to infer for digits data than for Iris
+
 
 **Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
