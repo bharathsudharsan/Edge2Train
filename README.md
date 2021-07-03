@@ -1,4 +1,4 @@
-# Edge2Train: A Framework to Train Machine Learning Model (SVMs) on Resource-Constrained IoT Edge Devices
+# Edge2Train: A Framework to Train Machine Learning Models (SVMs) on Resource-Constrained IoT Edge Devices
 
 **Overview:** We provide *Edge2Train* algorithm for all Arduino IDE-supported MCUs. [Edge2Train](https://dl.acm.org/doi/abs/10.1145/3410992.3411014) can be used to train SVMs (for binary classification tasks) on MCUs.
 
@@ -19,7 +19,6 @@ If the code is useful, please consider citing *Edge2Train* paper using the BibTe
   title={Edge2train: a framework to train machine learning models (svms) on resource-constrained iot edge devices},
   author={Sudharsan, Bharath and Breslin, John G and Ali, Muhammad Intizar},
   booktitle={Proceedings of the 10th International Conference on the Internet of Things},
-  pages={1--8},
   year={2020}
 }
 ```
