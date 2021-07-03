@@ -46,7 +46,7 @@ The relationship between training time (sec), training set size (number of rows)
 
 ### Train and Infer Time
 
-The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are shown below in Figure.
+The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are given below in Figure.
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_time_on_mcus_and_cpus.png)
 
@@ -56,11 +56,9 @@ The chosen CPUs have 1000x better specifications over MCUs. The train and infer 
 
 3. Since billions of edge devices are MCU-based, it is feasible to train even at lesser speeds. Models can rather be trained on the edge using E2T.
 
-4. The fastest MCU3 could infer in 0.0036 ms for Iris and 0.1 ms for Digits datasets.
+4. The fastest MCU3 could infer in 0.0036 ms for Iris and 0.1 ms for Digits datasets. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms.
 
-5. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms.
-
-6. MCUs 3, 4 that used our E2T performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
+5. MCUs 3, 4 that used our E2T performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
 
 ### Train and Infer Energy
 
