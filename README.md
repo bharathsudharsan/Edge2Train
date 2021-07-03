@@ -23,6 +23,7 @@ Using Arduino IDE we upload the E2T algorithm along with the selected/uncommente
 
 ## Edge2train Performance Evaluation
 
+### Setup
 After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. <br/>
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Setup.png)
@@ -34,6 +35,8 @@ As shown above, we received the training and inference result from MCUs via Seri
 2. Flash and SRAM consumed by Edge2Train on various MCU boards
 
 3. Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks
+
+### Training and Inference Time on MCUs and CPUs
 
 The relationship between training time, training set size, and feature dimension
 
@@ -60,6 +63,10 @@ Performing inference on MCUs using the MCUs trained SVMs
 2. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms
 
 3. MCU 3, 4 vs CPUs: MCUs 3, 4 that used our Edge2Train performed unit inference for the digits data (64 features) 3.5x times faster than CPUs
+
+### Training and Inference Energy on MCUs and CPUs
+
+![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_energy_on_mcus_and_cpus.png)
 
 Energy (in Joules) consumed to train and infer is calculated by multiplying the Current (Amperes) rating of MCUs with its Potential (Volts) and task time (seconds). For CPUs, we used the htop process viewer and powerstat tool
 
