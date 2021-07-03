@@ -1,15 +1,25 @@
 # Training SVMs on Microcontrollers
 
-**Overview:** We provide *Edge2Train* algorithm for all Arduino IDE-supported MCUs. [Edge2Train](https://dl.acm.org/doi/abs/10.1145/3410992.3411014) can be used to train SVMs (for binary classification tasks) on MCUs.
+We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T can be used to train SVMs (for binary classification tasks) on MCUs.
 
-**Datasets for onboard training:** We converted all the listed datasets into MCU executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
+## MCU boards, datasets chosen for training SVMs on MCUs
+
+### Datasets 
+
+We converted all the listed datasets into MCU executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary SVM classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training on MCUs.
 
 1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage"): Using *Edge2Train*, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
 2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
 3. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using *Edge2Train*, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
 
-**Experiment:** Using Arduino IDE we uploaded our *Edge2Train* algorithm on popular [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) boards and trained binary classifier using the above datasets.
+### MCU boards
 
+Using Arduino IDE we upload the *Edge2Train* algorithm along with the selected dataset on the following popular MCU boards and trained binary classifiers on MCUs
+
+[nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM
+[STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM
+[Generic ESP32](https://www.espressif.com/en/products/devkits): Xtensa LX6 @240MHz, 4MB Flash, 520KB SRAM
+[ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505): ARM Cortex-M0+ @48 MHz, 256kB Flash, 32KB SRAM 
 
 
 **Tip:** Before using the *Edge2Train* for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
