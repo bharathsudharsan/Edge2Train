@@ -34,7 +34,7 @@ The experimental setup is shown in above Figure. Here, we received the result da
 
 The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure. Data for the plot is the results ontained from MCUs.
 
-![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Sample_size_vs_time.png)
+![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/samples_vs_time.png)
 
 1. ESP32 took 15.58 secs to train for Iris. 28.24 secs for 64 features MNIST digits.
 
