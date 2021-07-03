@@ -32,7 +32,7 @@ The experimental setup is shown in above Figure. Here, we received the result da
 
 ### Train set size vs train time
 
-The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure. Data for the plot is the results ontained from MCUs.
+The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure (plotted data is the results ontained from MCUs).
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/samples_vs_time.png)
 
@@ -75,7 +75,7 @@ Energy (in Joules) consumed to train and infer is calculated by multiplying the 
 
 **Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
-**If the code is useful, please consider citing *Edge2Train* paper using the BibTex entry below.**
+**If the code is useful, please consider citing Edge2Train paper using the BibTex entry below.**
 
 ```
 @inproceedings{sudharsan2020edge2train,
