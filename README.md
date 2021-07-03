@@ -25,7 +25,7 @@ Using Arduino IDE we upload the E2T algorithm along with the selected/uncommente
 
 After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. <br/>
 
-![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/setup.png)
+![alt text](https://github.com/bharathsudharsan/Edge2Train/setup.png)
 
 As shown above, we received the training and inference result from MCUs via Serial port. We report the following results, using which we perform analysis.
 
