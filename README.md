@@ -1,8 +1,8 @@
-# Training SVMs on Microcontrollers
+# Support-Vector Machines (SVMs) Training and Inference on Microcontrollers (MCUs)
 
-We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T can be used to train SVMs (for binary classification tasks) on MCUs.
+We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T can be used for SVMs (for binary classification tasks) training and inference directly on MCU boards.
 
-## Datasets, MCU boards chosen for training SVMs on MCUs
+## Datasets, MCU boards chosen for SVMs training and inference on MCUs
 
 ### Datasets 
 
@@ -14,7 +14,7 @@ We converted all the listed datasets into MCU executable *.h* files and placed t
 
 ### MCU boards
 
-Using Arduino IDE we upload the E2T algorithm along with the selected dataset on the following popular MCU boards and trained binary classifiers on MCUs
+Using Arduino IDE we upload the E2T algorithm along with the selected dataset on the following popular boards and trained binary classifiers on MCUs.
 
 1. [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062): ARM Cortex-M4 @64MHz, 1MB Flash, 256KB SRAM
 2. [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html): ARM Cortex-M0 @72MHz, 128KB Flash, 20KB SRAM
