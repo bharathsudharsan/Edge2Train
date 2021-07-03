@@ -2,7 +2,7 @@
 
 We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T can be used to train SVMs (for binary classification tasks) on MCUs.
 
-## MCU boards, datasets chosen for training SVMs on MCUs
+## Datasets, MCU boards chosen for training SVMs on MCUs
 
 ### Datasets 
 
