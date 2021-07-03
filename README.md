@@ -28,13 +28,7 @@ After training we compare the accuracy, power consumed and inference time of our
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Setup.png)
 
-As shown above, we received the training and inference result from MCUs via Serial port. We report the following results, using which we perform analysis.
-
-1. Time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs
-
-2. Flash and SRAM consumed by Edge2Train on various MCU boards
-
-3. Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks
+The experimental setup is shown in above Figure. Here, we received the result data from MCUs via Serial port. We receive, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
 
 ### Train set size vs train time
 
