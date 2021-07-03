@@ -1,4 +1,4 @@
-# Edge2Train: A Framework to Train Machine Learning Models (SVMs) on Resource-Constrained IoT Edge Devices
+# Training SVMs on Microcontrollers
 
 **Overview:** We provide *Edge2Train* algorithm for all Arduino IDE-supported MCUs. [Edge2Train](https://dl.acm.org/doi/abs/10.1145/3410992.3411014) can be used to train SVMs (for binary classification tasks) on MCUs.
 
@@ -9,6 +9,8 @@
 3. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/): Here, we extracted data fields for digit 6, with positive and negative samples. Then using *Edge2Train*, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
 
 **Experiment:** Using Arduino IDE we uploaded our *Edge2Train* algorithm on popular [nRF52840 Adafruit Feather](https://www.adafruit.com/product/4062), [STM32f103c8 Blue Pill](https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html), [Generic ESP32](https://www.espressif.com/en/products/devkits), [ATSAMD21G18 Adafruit METRO](https://www.adafruit.com/product/3505) boards and trained binary classifier using the above datasets.
+
+
 
 **Tip:** Before using the *Edge2Train* for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
