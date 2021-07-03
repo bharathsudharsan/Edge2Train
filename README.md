@@ -28,11 +28,11 @@ After training we compare the accuracy, power consumed and inference time of our
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Setup.png)
 
-The experimental setup is shown in above Figure. Here, we received the result data from MCUs via Serial port. We receive, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
+The experimental setup is shown in above Figure. Here, we received the result data from MCUs via Serial port. We received, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
 
 ### Train set size vs train time
 
-The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure.
+The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure. Data for the plot is the results ontained from MCUs.
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Sample_size_vs_time.png)
 
