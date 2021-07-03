@@ -6,7 +6,7 @@ We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T 
 
 ### Datasets 
 
-We converted all the listed datasets into MCU executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary SVM classifiers on MCUs using *Edge2Train*. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training and inference on MCUs.
+We converted the listed datasets into MCUs executable *.h* files and placed them inside the E2T folder. The datasets 1 to 3 are used for training binary SVM classifiers on MCUs using E2T. The users have to uncomment their dataset of choice (header file at the beginning of the main algorithm program) to use it when training and inference on MCUs.
 
 1. [Iris Flowers](https://archive.ics.uci.edu/ml/datasets/iris "Google's Homepage") (4 features, 3 classes, 150 samples): Using E2T, we train a binary classifier to distinguish Iris Setosa from other flowers based on the input features.
 2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) (30 features, 2 classes, 569 samples): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
@@ -42,7 +42,7 @@ The relationship between training time (sec), training set size (number of rows)
 
 3. Training time grows swiftly with the number of training samples.
 
-4. Sudden peaks observed when Edge2Train consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly.
+4. Sudden peaks observed when E2T consumes more time to find the optimal hyperplane. Trough points are observed when the optimal hyperplane is found quickly.
 
 ### Train and Infer Time
 
@@ -54,13 +54,13 @@ The chosen CPUs have 1000x better specifications over MCUs. The train and infer 
 
 2. Although CPUs are faster, they cannot be used as edge devices due to their cost (CPU1 is 200x more costly than MCU4), form factor (5x more area), and energy consumption (7x times). 
 
-3. Since billions of edge devices are MCU-based, it is feasible to train even at lesser speeds. Models can rather be trained on the edge using our framework.
+3. Since billions of edge devices are MCU-based, it is feasible to train even at lesser speeds. Models can rather be trained on the edge using E2T.
 
 4. The fastest MCU3 could infer in 0.0036 ms for Iris and 0.1 ms for Digits datasets.
 
 5. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms.
 
-6. MCU 3, 4 vs CPUs: MCUs 3, 4 that used our Edge2Train performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
+6. MCU 3, 4 vs CPUs: MCUs 3, 4 that used our E2T performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
 
 ### Train and Infer Energy
 
@@ -68,9 +68,9 @@ Energy (in Joules) consumed to train and infer is calculated by multiplying the 
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_energy_on_mcus_and_cpus.png)
 
-1. MCUs consume 20x times less energy for the Iris and 350x times less energy for digits than CPUs to unit infer
+1. MCUs consume 20x times less energy for the Iris and 350x times less energy for digits than CPUs to unit infer.
 
-2. For unit infer using 64-dimension digits CPU1 consumed 58x more energy than to inference for a 4-dimension input. Whereas MCU4 only consumed 3.4x times more energy to infer for digits data than for Iris
+2. For unit infer using 64-dimension digits CPU1 consumed 58x more energy than to inference for a 4-dimension input. Whereas MCU4 only consumed 3.4x times more energy to infer for digits data than for Iris.
 
 
 **Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
