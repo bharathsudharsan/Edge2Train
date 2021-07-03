@@ -46,7 +46,7 @@ The relationship between training time (sec), training set size (number of rows)
 
 ### Train and Infer Time
 
-The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are given below in Figure.
+The chosen CPUs have 1000x better specifications over MCUs. The train and infer time for all 5 MCUs and 2 CPUs are given below in Figure
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_time_on_mcus_and_cpus.png)
 
