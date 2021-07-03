@@ -50,7 +50,7 @@ The chosen CPUs have 1000x better specifications over MCUs. The train and infer 
 
 ![alt text](https://github.com/bharathsudharsan/Edge2Train/blob/main/Train_and_infer_time_on_mcus_and_cpus.png)
 
-1. CPU1 and MCU4 is fastest in their respective classes. CPU1 vs MCU4: CPU1 is only 7.57 sec faster than MCU4 for Iris and 7.45 sec for MNIST digits datasets.
+1. CPU1 and MCU4 is fastest in their respective classes. CPU1 is only 7.57 sec faster than MCU4 for Iris and 7.45 sec for MNIST digits datasets.
 
 2. Although CPUs are faster, they cannot be used as edge devices due to their cost (CPU1 is 200x more costly than MCU4), form factor (5x more area), and energy consumption (7x times). 
 
@@ -60,7 +60,7 @@ The chosen CPUs have 1000x better specifications over MCUs. The train and infer 
 
 5. The fastest CPU2 performed the same tasks in  0.004 ms and 0.341 ms.
 
-6. MCU 3, 4 vs CPUs: MCUs 3, 4 that used our E2T performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
+6. MCUs 3, 4 that used our E2T performed unit inference for the digits data (64 features) 3.5x times faster than CPUs.
 
 ### Train and Infer Energy
 
