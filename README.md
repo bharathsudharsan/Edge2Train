@@ -12,7 +12,7 @@
 
 **Tip:** Before using the *Edge2Train* for onboard training, for the first time, we recommend users to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
-If you use the code in this repository in your work, please cite *Edge2Train* paper using the BibTex entry below.
+If the code is useful, please consider citing *Edge2Train* paper using the BibTex entry below.
 
 ```
 @inproceedings{sudharsan2020edge2train,
