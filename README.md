@@ -2,7 +2,7 @@
 
 We provide *Edge2Train* (E2T) algorithm for all Arduino IDE-supported MCUs. E2T can be used for SVMs (for binary classification tasks) training and inference directly on MCU boards.
 
-## Datasets, MCU boards chosen for SVMs training and inference on MCUs
+## Datasets, MCU boards for SVMs Training and Inference on MCUs
 
 ### Datasets 
 
@@ -12,7 +12,7 @@ We converted the listed datasets into MCUs executable *.h* files and placed them
 2. [Breast Cancer](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) (30 features, 2 classes, 569 samples): Here we train a binary classifier that can find the class names (malignant or benign) based on the input features.
 3. [MNIST Handwritten Digits](http://yann.lecun.com/exdb/mnist/) (64 features, 10 classes, 1797 samples): Here, we extracted data fields for digit 6, with positive and negative samples. Then using E2T, we trained a binary classifier on MCUs, that distinguishes digit 6 from other digits, based on the input features.
 
-### MCU boards
+### MCU Boards
 
 Using Arduino IDE we upload the E2T algorithm along with the selected/uncommented dataset on the following popular boards and trained binary classifiers on MCUs.
 
@@ -30,7 +30,7 @@ After training we compare the accuracy, power consumed and inference time of our
 
 The experimental setup is shown in the above Figure. Here, we received the result data from MCUs via Serial port. We received, time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs. We Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks.
 
-### Train set size vs train time
+### Train Set Size vs Train Time
 
 The relationship between training time (sec), training set size (number of rows), and feature dimension can be analyzed from the below Figure (plotted data is the results obtained from MCUs).
 
