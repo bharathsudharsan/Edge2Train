@@ -23,7 +23,15 @@ Using Arduino IDE we upload the E2T algorithm along with the selected/uncommente
 
 ## Edge2train Performance Evaluation
 
-After training we compare the accuracy, power consumed and inference time of our Edge2Trained models with Python Scikit learn models on high-resource CPUs. The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. 
+After training we compare the accuracy, power consumed and inference time of our Edge2Trained models (trained on MCUs) with Python Scikit learn models (trained on high-resource CPUs). The CPU1 is a standard Ubuntu laptop with Intel (R) Core (TM) i7-5500 CPU @ 2.40 GHz. CPU2 is a Windows laptop with Intel (R) Core (TM) i7-8650U CPU @ 1.90 GHz. 
+
+We received the training and inference result from MCUs via Serial port. We report the following results, using which we perform analysis.
+
+1. Time and energy consumed to; Train SVMs on MCUs; Infer using thus trained SVMs on MCUs
+
+2. Flash and SRAM consumed by Edge2Train on various MCU boards
+
+3. Compare MCUs results (uses Edge2Train) with CPUs (uses Python scikit-learn) for the same datasets and tasks
 
 **Tip:** When first time training SVMs on MCUs using E2T, we recommend to use better resource boards like ESP32 and Adafruit Feather nrf52, then move on to using the tiny ones like Arduino Nano, Uno, etc.
 
