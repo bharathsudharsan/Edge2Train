@@ -84,3 +84,4 @@ Energy (in Joules) consumed to train and infer is calculated by multiplying the 
   year={2020}
 }
 ```
+For any clarification/further information please don't hesitate to contact me. Email: b.sudharsan1@nuigalway.ie
